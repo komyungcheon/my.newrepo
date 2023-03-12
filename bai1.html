@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Mật độ dân số</h2>
+<input type="'text'" placeholder="Số dân trong khu vực" id="1">
+<br>
+<input type="'text'" placeholder="Diện thích khu vực" id="2">
+<br>
+<button onclick="check()">Click here</button>
+<script>
+  function check() {
+    let danso = +document.getElementById('1').value
+    let dientich = +document.getElementById('2').value
+    if (danso / dientich > 1000) {
+      alert('Khu vực này quá đông đúc')
+    } else alert('Khu vực này không quá đông đúc')
+  }
+</script>
+</body>
+</html>
